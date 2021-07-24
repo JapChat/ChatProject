@@ -83,6 +83,7 @@ class Receiver extends Thread {
     	
     	String result;
     	String filePath = "C:\\Users\\0206c\\OneDrive\\바탕 화면\\image";
+    	// 송신할 파일의 경로 설정
     	 
         try {
             System.out.println("파일 수신 작업을 시작합니다.");

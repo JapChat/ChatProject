@@ -9,15 +9,16 @@ public class SendClient {
     public static void main(String[] args) {
     	
     	String serverIp = "127.0.0.1";
-        Socket socket = null;
+        Socket socket = null; //연결되지 않는 소캣 생성
          
         try {
             // 서버 연결 요청
-            socket = new Socket(serverIp, 7777);
+            socket = new Socket(serverIp, 7777); //127.0.0.1서버에 접속
             System.out.println("서버에 연결되었습니다.");
  
             //파일전송        	
             String filePath = "C:\\Users\\0206c\\OneDrive\\바탕 화면";
+            // 수신받을 파일의 경로 설정
         	String fileNm = "mylove.png";
         	//String fileNm = "Chrome";
             FileSender fs = new FileSender(socket, filePath, fileNm);
