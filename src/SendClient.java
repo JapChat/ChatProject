@@ -19,8 +19,10 @@ public class SendClient {
             //파일전송        	
             String filePath = "C:\\Users\\0206c\\OneDrive\\바탕 화면";
             // 수신받을 파일의 경로 설정
-        	String fileNm = "mylove.png";
-        	//String fileNm = "Chrome";
+//        	String fileNm = "mylove.png";
+//        	String fileNm = "메모.txt";
+//        	String fileNm = "인쇄.hwp";
+        	String fileNm = "사진.zip";
             FileSender fs = new FileSender(socket, filePath, fileNm);
             fs.start();
                         

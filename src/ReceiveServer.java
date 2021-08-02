@@ -82,7 +82,9 @@ class Receiver extends Thread {
     private String fileWrite(DataInputStream dis){
     	
     	String result;
-    	String filePath = "C:\\Users\\0206c\\OneDrive\\바탕 화면\\image";
+//    	String filePath = "C:\\Users\\0206c\\OneDrive\\바탕 화면\\image";
+    	String filePath = System.getProperty("user.dir");
+        System.out.println("Working Directory = " + filePath);
     	// 송신할 파일의 경로 설정
     	 
         try {
