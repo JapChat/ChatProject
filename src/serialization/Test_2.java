@@ -43,6 +43,5 @@ public class Test_2 {
         } catch (IOException e) { //read, write
 			e.printStackTrace();
 		} 
-//        
     }
 }
