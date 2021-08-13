@@ -14,15 +14,15 @@ public class Test{
 //		System.out.println(student.getId()+"\t"+student.getName()+"\t"+student.getMajor());
 
 		// 직렬화
-		try {
-			FileOutputStream fsOut = new FileOutputStream("student.bin");
-			ObjectOutputStream osOut = new ObjectOutputStream(fsOut);
-			osOut.writeObject(student);  // 저장
-			osOut.close();
-			
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			FileOutputStream fsOut = new FileOutputStream("student.bin");
+//			ObjectOutputStream osOut = new ObjectOutputStream(fsOut);
+//			osOut.writeObject(student);  // 저장
+//			osOut.close();
+//			
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
 		
 		// 역직렬화
 		FileInputStream fsIn;
